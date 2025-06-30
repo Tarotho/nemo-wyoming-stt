@@ -9,11 +9,11 @@ A local speech-to-text server based on NVIDIA NeMo Conformer models implementing
 
 ## Quick Start
 
-'''bash
+```bash
 git clone https://github.com/yourusername/nemo-wyoming-stt.git
 cd nemo-wyoming-stt
 docker-compose up --build
-'''
+```
 
 The server will start listening on port 10300 (Wyoming protocol).
 
@@ -21,13 +21,13 @@ The server will start listening on port 10300 (Wyoming protocol).
 
 Add this to your `configuration.yaml` to connect HA to the server:
 
-'''yaml
+```yaml
 stt:
   - platform: wyoming
     name: nemo_stt
     host: YOUR_SERVER_IP
     port: 10300
-'''
+```
 
 ## Features
 
