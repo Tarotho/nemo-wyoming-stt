@@ -8,7 +8,6 @@ from wyoming.audio import AudioChunk, AudioStart, AudioStop
 from wyoming.stt import Transcript, TranscriptResult
 from nemo.collections.asr.models import EncDecCTCModel
 
-PORT = int(os.getenv("PORT", 10300))  # Puerto por defecto 10300
 MODEL_NAME = os.getenv("MODEL_NAME", "stt_es_conformer_ctc_large")  # Modelo por defecto
 
 print(f"🔊 Cargando modelo {MODEL_NAME}...")
@@ -42,8 +41,8 @@ class STTServer:
 
 async def main():
     server = STTServer()
-    await asyncio.start_server(server.handle, "0.0.0.0", PORT)
-    print(f"🚪 Servidor Wyoming STT escuchando en puerto {PORT}...")
+    await asyncio.start_server(server.handle, "0.0.0.0", 10300)
+    print(f"🚪 Servidor Wyoming STT escuchando en puerto 10300...")
     await asyncio.Future()
 
 asyncio.run(main())
