@@ -10,7 +10,7 @@ A local speech-to-text server based on NVIDIA NeMo Conformer models implementing
 ## Quick Start
 
 ```bash
-git clone https://github.com/yourusername/nemo-wyoming-stt.git
+git clone https://github.com/Tarotho/nemo-wyoming-stt.git
 cd nemo-wyoming-stt
 docker-compose up --build
 ```
