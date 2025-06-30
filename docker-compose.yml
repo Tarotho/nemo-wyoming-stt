@@ -1,0 +1,15 @@
+version: '3.9'
+
+services:
+  wyoming-nemo-stt:
+    build: .
+    container_name: wyoming-nemo-stt
+    runtime: nvidia
+    environment:
+      - NVIDIA_VISIBLE_DEVICES=all
+    ports:
+      - "10300:10300"  # puerto Wyoming
+    volumes:
+      - ./:/workspace
+    working_dir: /workspace
+    command: bash wyoming_entrypoint.sh
