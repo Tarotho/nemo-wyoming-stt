@@ -5,6 +5,8 @@ services:
     runtime: nvidia
     environment:
       - NVIDIA_VISIBLE_DEVICES=all
+      - PORT=10600
+      - MODEL_NAME=stt_es_conformer_ctc_large
     ports:
       - "10600:10600"  # puerto Wyoming
     volumes:
