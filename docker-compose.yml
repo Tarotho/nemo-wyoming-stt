@@ -8,7 +8,7 @@ services:
     environment:
       - NVIDIA_VISIBLE_DEVICES=all
     ports:
-      - "10300:10300"  # puerto Wyoming
+      - "10600:10600"  # puerto Wyoming
     volumes:
       - ./:/workspace
     working_dir: /workspace
