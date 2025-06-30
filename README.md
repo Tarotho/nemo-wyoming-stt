@@ -12,7 +12,7 @@ A local speech-to-text server based on NVIDIA NeMo Conformer models implementing
 ```bash
 git clone https://github.com/Tarotho/nemo-wyoming-stt.git
 cd nemo-wyoming-stt
-docker-compose up --build
+docker compose up --build
 ```
 
 The server will start listening on port 10300 (Wyoming protocol).
