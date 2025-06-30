@@ -42,7 +42,7 @@ class STTServer:
 async def main():
     server = STTServer()
     await asyncio.start_server(server.handle, "0.0.0.0", 10600)
-    print("🚪 Servidor Wyoming STT escuchando en puerto 10300...")
+    print("🚪 Servidor Wyoming STT escuchando en puerto 10600...")
     await asyncio.Future()  # run forever
 
 asyncio.run(main())
